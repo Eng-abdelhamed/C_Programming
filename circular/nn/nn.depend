@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1714934912 source:c:\users\abdel\onedrive\desktop\embedded system course\nn\main.cpp
+	<iostream>
+	<cstdlib>
+
+1713626526 source:c:\users\abdel\onedrive\desktop\embedded system course\nn\src\calculator.cpp
+	"calculator.h"
+	<calculator.h>
+	<iostream>
+
+1713626538 c:\users\abdel\onedrive\desktop\embedded system course\nn\include\calculator.h
+	<iostream>
+
