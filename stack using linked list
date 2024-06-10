@@ -1,0 +1,72 @@
+#include<iostream>
+using namespace std;
+struct node
+{
+  int data;
+  node *next;
+};
+node * top = NULL;
+
+void push(int value)
+{
+  node*new_node = new node;
+  new_node->data = value;
+  new_node->next = top;
+  top = new_node;
+}
+
+int pop()
+{
+    int value;
+    if(top ==NULL)
+    {
+        cout<<"stack underflow \n";
+        return -1;
+    }
+    else
+    {
+     node*firstnode=top;
+     top = firstnode->next;
+     value = firstnode->data;
+     delete(firstnode);
+     return value;
+    }
+}
+
+int peek()
+{
+    
+    if(top ==NULL)
+    {
+        cout<<"stack underflow \n";
+        return -1;
+    }
+    else
+    {
+        return top->data;
+    }
+}
+
+void display()
+{
+    node *current= top;
+    if(top ==NULL)
+    {
+        cout<<"stack underflow \n";
+    }
+    else
+    {
+        while(current!=NULL)
+        {
+            cout<<current->data<<"\n";
+            current=current->next;
+        }
+    }
+    cout<<endl;
+}
+
+int main()
+{
+
+
+}
